@@ -8,5 +8,12 @@
     "build": "pnpm --filter @lunara/app build",
     "test": "pnpm --filter @lunara/app test",
     "preview": "pnpm --filter @lunara/app preview"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp",
+      "workerd"
+    ]
   }
 }
